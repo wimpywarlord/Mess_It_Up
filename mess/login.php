@@ -18,6 +18,60 @@
     }
     ?>
 
+        <?php
+        $flag = false;
+        if(isset($_POST['Submit']))
+        {
+            $Username=$_POST['Username'];
+            $Password=$_POST['Password'];
+            // echo $Username;
+            // echo $Password;
+
+                $ViewQuery = "SELECT * FROM student";
+                $Execute = mysqli_query($connection,$ViewQuery);
+                while($DataRows = mysqli_fetch_array($Execute))
+                {
+                    $username=$DataRows['username'];
+                    $password=$DataRows['password'];
+                    if($username==$Username && $password==$Password)
+                    {
+                        echo $username;
+                        $temp_username = $username;
+                        $temp_room_no = $DataRows ['room_no'];
+                        $temp_contact_no = $DataRows ['contact_no'];
+                        $temp_balance = $DataRows ['balance'];
+                        $temp_mess_name = $DataRows ['mess_name'];
+                        $flag = true;
+                        break;
+                    }                 
+                }
+        }
+        if($flag)
+        {
+            session_start();
+            $_SESSION['qwe'] = $username ;
+            echo $_SESSION['qwe'];
+            $_SESSION['user_username'] = $temp_username;
+            echo $_SESSION['user_username'];
+            $_SESSION['user_room_no'] = $temp_room_no;
+            echo $_SESSION['user_room_no'] ;
+            $_SESSION['user_contact_no'] = $temp_contact_no;
+            echo $_SESSION['user_contact_no'] ;
+            $_SESSION['user_balance'] = $temp_balance;
+            echo $_SESSION['user_balance'] ;
+            $_SESSION['user_mess_name'] = $temp_mess_name;
+            echo $_SESSION['user_mess_name'] ;
+            echo "<script> location.href='home.php'; </script>";
+            exit;
+            echo "USER HAS BEEN FOUND ";
+        }
+        else
+        {
+            echo "<p>USER NOT FOUND</p> ";
+        }
+        ?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -190,40 +244,6 @@
                 </div>
         </div>
     </div>
-        <p>
-        <?php
-        $flag = false;
-        if(isset($_POST['Submit']))
-        {
-            $Username=$_POST['Username'];
-            $Password=$_POST['Password'];
-            // echo $Username;
-            // echo $Password;
-
-                $ViewQuery = "SELECT * FROM student";
-                $Execute = mysqli_query($connection,$ViewQuery);
-                while($DataRows = mysqli_fetch_array($Execute))
-                {
-                    $username=$DataRows['username'];
-                    $password=$DataRows['password'];
-                    if($username==$Username && $password==$Password)
-                    {
-                        $flag = true;
-                    }                 
-                }
-        }
-        if($flag)
-        {
-            echo "<script> location.href='home.php'; </script>";
-            exit;
-            // echo "USER HAS BEEN FOUND ";
-        }
-        else
-        {
-            // echo "<p>USER NOT FOUND</p> ";
-        }
-        ?>
-    </p>
 </body>
 
 </html>

@@ -1,4 +1,9 @@
 <?php
+ 	session_start();
+ 	$you = $_SESSION['qwe'] ;
+ 	// echo $_SESSION['qwe'] ;
+?>
+<?php
     $connection = mysqli_connect("localhost","root","");
     if($connection)
     {
@@ -18,15 +23,32 @@
     }
     if(isset($_POST['Submit']))
     {//to run PHP script on submit
-    	echo "UYMDSA S DAD ";
+    	echo "<h3 >THANK YOU FOR SHOPPING WITH US.</h3>";
 	if(!empty($_POST['check_list'])){
-		echo "dasdads";
+		// echo "dasdads";
 	// Loop to store and display values of individual checked checkbox.
 	foreach($_POST['check_list'] as $selected){
-	echo $selected."</br>";
+		// echo $selected;
+		$Order_arr = explode ("@", $selected);
+		// echo $Order_arr[0];
+		// echo $Order_arr[1];
+		// echo $you;
+		$Time_of_t = date ('d-m-y h:i:s');
+		// echo $Time_of_t;
 		// echo "boom clasp";
+		$Query = "INSERT INTO transaction(dish,price,username,time_of_t) VALUES('$Order_arr[0]','$Order_arr[1]','$you','$Time_of_t')";
+	    $execute = mysqli_query($connection,$Query);
+	    if($execute)
+	    {
+	        // echo "TRANSACTION RECORDED";
+	    }
+	    else
+	    {
+	        // echo "TRANSACTION DETAILS NOT RECORDED";
+	    }
 	}
 	}
+
 	}
 ?>
 <!DOCTYPE html>
@@ -36,61 +58,9 @@
 		<link href="https://fonts.googleapis.com/css?family=Anton|Courgette&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<style type="text/css">
-		html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-    display: block;
-}
-body {
-    line-height: 1;
-}
-ol, ul {
-    list-style: none;
-}
-blockquote, q {
-    quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-    content: '';
-    content: none;
-}
-table {
-    border-collapse: collapse;
-    border-spacing: 0;
-}
-*
-{
-    margin: 0;
-    padding: 0;
-}
-div
-{
-    /*border:2px solid red;*/
-}
 		#jumbotron_bg
 		{
-			background-image: url("/2.jpg");
+			background-image: url("2.jpg");
 			background-size: contain;
 			background-size: cover;
     		background-repeat: no-repeat;
@@ -167,7 +137,6 @@ div
 		        border-bottom-right-radius:15px;
 		        border-bottom-left-radius:15px;
 		        font-size: 30px;
-		        padding: 17px;
 		        font-family: 'Anton', sans-serif;
 		}
 		#card_dish
@@ -180,9 +149,9 @@ div
 <body>
 	<div class="row" id="my_nav_bar">
 		<div class="col-lg-1"><p style="color:white" id="zero">W I M P Y</p></div>
-		<a href=""><div class="col-lg-1">ProfileView</div></a>
-		<a href=""><div class="col-lg-1">Transactions</div></a>
-		<a href=""><div class="col-lg-1"> MessInfo</div></a>
+		<a href="profile.php"><div class="col-lg-1">ProfileView</div></a>
+		<a href="transactions.php"><div class="col-lg-1">Transactions</div></a>
+		<a href="mess_info.php"><div class="col-lg-1"> MessInfo</div></a>
 	</div>
 		<div class="jumbotron jumbotron-fluid"   id="jumbotron_bg">
   			<div class="container" >
@@ -209,8 +178,8 @@ div
 				            	<div class="col-lg-3"><?php echo  $Dish ?></div>
 				            	<div class="col-lg-3"><?php echo $Price?></div>
 				            	<div class="col-lg-3"><?php echo $Dish_type ?></div>
-				            	<div class="col-lg-3"><?php echo $Mess_name?>
-				            	<input id="qwerty" type="checkbox" name="check_list[]" value="<?php echo $Dish."@".$Price."@".$Dish_type?>"></div>
+				            	<div class="col-lg-3">
+				            	<input id="qwerty" type="checkbox" name="check_list[]" value="<?php echo $Dish.'@'.$Price ?>"></div>
 				            </div>
 					  		</div>
 					</div>
@@ -229,8 +198,8 @@ insert into menu values('non-veg','40','chicken','special');
 insert into menu values('veg','60','almonds','special');
 insert into menu values('veg','30','sweet','special');
 insert into menu values('veg','50','burger','special');
-insert into menu values('non-veg','30','pizza','special'); -->
-<!-- insert into menu values('non-veg','30','roti','special'); 
+insert into menu values('non-veg','30','pizza','special');
+insert into menu values('non-veg','30','roti','special'); 
 insert into menu values('non-veg','20','daal','special'); 
 insert into menu values('non-veg','80','chicken-pizza','special'); 
 insert into menu values('non-veg','40','juice','special');  -->
