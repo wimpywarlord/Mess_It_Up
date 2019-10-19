@@ -1,6 +1,7 @@
 <?php
  	session_start();
  	$you = $_SESSION['qwe'] ;
+ 	$temp_balance = $_SESSION['user_balance'] ;
  	// echo $_SESSION['qwe'] ;
 ?>
 <?php
@@ -27,11 +28,13 @@
 	if(!empty($_POST['check_list'])){
 		// echo "dasdads";
 	// Loop to store and display values of individual checked checkbox.
+	$bill_outstanding = 0;
 	foreach($_POST['check_list'] as $selected){
 		// echo $selected;
 		$Order_arr = explode ("@", $selected);
-		// echo $Order_arr[0];
-		// echo $Order_arr[1];
+		echo $Order_arr[0];
+		echo $Order_arr[1];
+		$bill_outstanding   = $bill_outstanding + number_format($Order_arr[1]);
 		// echo $you;
 		$Time_of_t = date ('d-m-y h:i:s');
 		// echo $Time_of_t;
@@ -47,8 +50,21 @@
 	        // echo "TRANSACTION DETAILS NOT RECORDED";
 	    }
 	}
+	$yumyumtum = $temp_balance - $bill_outstanding;
+	echo $yumyumtum."</br>";
+	echo $bill_outstanding."</br>";
+	echo $temp_balance."</br>";
 	}
-
+	$UpdateQuery = "UPDATE student SET balance='$yumyumtum' WHERE username ='$you' ";
+	$Execute = mysqli_query($connection,$UpdateQuery);
+	if($Execute)
+	{
+		echo "money deducted";
+	}	
+	else
+	{
+		echo "money not deducted";
+	}
 	}
 ?>
 <!DOCTYPE html>

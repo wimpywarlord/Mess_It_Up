@@ -3,7 +3,6 @@
     $temp_username = $_SESSION['user_username'] ;
     $temp_room_no = $_SESSION['user_room_no'] ;
     $temp_contact_no = $_SESSION['user_contact_no'] ;
-    $temp_balance = $_SESSION['user_balance'];
    	$temp_mess_name  = $_SESSION['user_mess_name'] ;
 ?>
 <!DOCTYPE html>
@@ -73,9 +72,40 @@
 			<div class="row" id="user_room_no">
 				<p>CONTACT NUMBER : <?php echo $temp_contact_no ?></p>
 			</div>
-			<div class="row" id="user_room_no">
-				<p>YOUR CURRENT BALANCE : <?php echo $temp_balance ?></p>
-			</div>
+			<?php
+			   $connection = mysqli_connect("localhost","root","");
+			    if($connection)
+			    {
+			        // echo "CONNECTED";
+			    }
+			    else
+			    {
+			        echo "<h1> NOT CONNECTED </h1>";
+			    }
+			    $selected = mysqli_select_db($connection,'user');
+			    if($selected)
+			    {
+			        // echo  "<h1>selected db</h1>";
+			    }
+			    else{
+			        echo "not selected db";
+			    }
+
+                $ViewQuery = "SELECT * FROM student";
+                $Execute = mysqli_query($connection,$ViewQuery);
+                while($DataRows = mysqli_fetch_array($Execute))
+                {
+                	if($DataRows['username']==$temp_username)
+                	{
+                ?>
+
+                		<div class="row" id="user_room_no">
+				<p>YOUR CURRENT BALANCE : <?php echo $DataRows['balance'] ?></p>
+						</div>
+				<?php
+                	}
+                }
+			?>
 			<div class="row" id="user_room_no">
 				<p>MESS TYPE : <?php echo $temp_mess_name ?></p>
 			</div>
