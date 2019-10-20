@@ -38,6 +38,7 @@ Enjoy the service of MessItUp.
 
 ### Prerequisites
 
+All you need is a knack for learning.
 As the saying goes.
 
 > Your life will flash in front of your eyes one day,make sure its worth watching.
@@ -48,13 +49,10 @@ A step by step series of examples that tell you how to get a development env run
 All you need to dowload is xampp from [here](https://www.apachefriends.org/download.html)
 The installation process is fairly simple and the wizard will walk you through the process.
 
-Optionally I recommend you to download **Sublime text** 3 from here.Its a amazing free editor from [here](https://www.sublimetext.com/3). 
+Optionally I recommend you to download **Sublime text** 3.Its a amazing free editor from [here](https://www.sublimetext.com/3). 
  
 In the end you should end up with the xampp control panel which looks something like this : 
-
-## Running the tests
-
-Explain how to run the automated tests for this system
+<img src=">
 
 ### Break down into end to end tests
 
