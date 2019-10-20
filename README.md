@@ -11,25 +11,28 @@ It's fast, its safe, its useful, its mess it up by kshitij Dhyani
 Its quite simple, just follow the following steps.
 
 Start with cloning the repository in the desired directory :
-'''
+
+```
 git clone <http url>
-'''
+```
+  
 You will need to download and install xampp from [here](https://www.apachefriends.org/download.html)
 
-Now copy the cloned repo folder named mess and paste it into the **htdocs** folder inside the **xampp** folder which is installed by default
-into the C drive of your computer.
+Now copy the cloned repo folder named mess and paste it into the **htdocs** folder inside the **xampp** folder which is installed by default into the C drive of your computer.
 
 Xampp is installed by default to :
-'''
+
+```
 C:\xampp\htdocs
-'''
+```
 
 Now open xampp control panel and start the Apache Service and MySql service.
 
 Open your browser and type in the url 
-'''
+
+```
 http://localhost/mess/login.php
-'''
+```
 
 Enjoy the service of MessItUp.
 
