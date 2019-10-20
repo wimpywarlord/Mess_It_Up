@@ -57,7 +57,7 @@ Optionally I recommend you to download **Sublime text** 3.Its a amazing free edi
  
 In the end you should end up with the xampp control panel which looks something like this :
 
-<img src="/mess/DOCS/yumyum.png">
+<img src="Mess_It_Up/mess/DOCS/yumyum.PNG">
 
 ## Deployment
 
@@ -71,7 +71,9 @@ Enjoy the service of MessItUp.
 
 ## Built With
 
-[![Built with Love](https://forthebadge.com/images/badges/built-with-love.svg)](https://www.linkedin.com/in/kshitijdhyani/) [![KSHITIJ DHYANI](https://forthebadge.com/images/badges/makes-people-smile.svg)](https://www.linkedin.com/in/kshitijdhyani/) [![KSHITIJ DHYANI]
+[![Built with Love](https://forthebadge.com/images/badges/built-with-love.svg)](https://www.linkedin.com/in/kshitijdhyani/) [![KSHITIJ DHYANI](https://forthebadge.com/images/badges/makes-people-smile.svg)](https://www.linkedin.com/in/kshitijdhyani/) 
+
+Build with love and some php and MySQL.
 
 ## Contributing
 
@@ -79,4 +81,4 @@ Help us make the site better in any way possible.
 
 ## Authors
 
-* **Kshitij Dhyani** - *Initial work* - [PurpleBooth](https://github.com/wimpywarlord)
+* **Kshitij Dhyani** - *art cannot be rushed* - [My github profile](https://github.com/wimpywarlord)
