@@ -57,7 +57,7 @@ Optionally I recommend you to download **Sublime text** 3.Its a amazing free edi
  
 In the end you should end up with the xampp control panel which looks something like this :
 
-<img src="Mess_It_Up/mess/DOCS/yumyum.PNG">
+![yumyum](https://user-images.githubusercontent.com/41532804/67155518-d808a080-f32e-11e9-98de-b1ebef43ef70.PNG)
 
 ## Deployment
 
