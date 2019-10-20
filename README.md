@@ -52,7 +52,7 @@ The installation process is fairly simple and the wizard will walk you through t
 Optionally I recommend you to download **Sublime text** 3.Its a amazing free editor from [here](https://www.sublimetext.com/3). 
  
 In the end you should end up with the xampp control panel which looks something like this : 
-<img src=">
+<img src="/mess/DOCS/yumyum.jpg">
 
 ### Break down into end to end tests
 
