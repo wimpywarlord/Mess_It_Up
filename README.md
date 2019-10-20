@@ -83,7 +83,7 @@ Build with love and some php and MySQL.
 
 Help us make the site better in any way possible.
 
-## I'm social animal!
+## I'm a social animal!
 
 So connect with me and share your experience.
 
