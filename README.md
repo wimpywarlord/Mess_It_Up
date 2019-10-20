@@ -38,29 +38,19 @@ Enjoy the service of MessItUp.
 
 ### Prerequisites
 
-What things you need to install the software and how to install them
+As the saying goes.
 
-```
-Give examples
-```
+> Your life will flash in front of your eyes one day,make sure its worth watching.
+A step by step series of examples that tell you how to get a development env running
 
 ### Installing
 
-A step by step series of examples that tell you how to get a development env running
+All you need to dowload is xampp from [here](https://www.apachefriends.org/download.html)
+The installation process is fairly simple and the wizard will walk you through the process.
 
-Say what the step will be
-
-```
-Give the example
-```
-
-And repeat
-
-```
-until finished
-```
-
-End with an example of getting some data out of the system or using it for a little demo
+Optionally I recommend you to download **Sublime text** 3 from here.Its a amazing free editor from [here](https://www.sublimetext.com/3). 
+ 
+In the end you should end up with the xampp control panel which looks something like this : 
 
 ## Running the tests
 
