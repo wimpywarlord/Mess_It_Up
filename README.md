@@ -12,6 +12,10 @@ It's fast, its safe, its useful, its mess it up by kshitij Dhyani
 
 ## Getting Started
 
+[![THINK](https://img.shields.io/badge/Stay-Motivated-teal.svg?style=for-the-badge)](https://github.com/wimpywarlord/Mess_It_Up) 
+[![MAKE](https://img.shields.io/badge/Think-Big-orange.svg?style=for-the-badge)](https://www.linkedin.com/in/kshitijdhyani/)
+[![SELL](https://img.shields.io/badge/Work-Hard-blue.svg?style=for-the-badge)](https://github.com/wimpywarlord)
+
 Its quite simple, just follow the following steps.
 
 Start with cloning the repository in the desired directory :
@@ -79,6 +83,8 @@ Build with love and some php and MySQL.
 
 Help us make the site better in any way possible.
 
-## Authors
+## I'm social animal!
 
-* **Kshitij Dhyani** - *art cannot be rushed* - [My github profile](https://github.com/wimpywarlord)
+So connect with me and share your experience.
+
+<a href="https://www.facebook.com/kshitij.dhyani.3" target="_blank"><img height="32" width="32" src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/facebook.svg" /></a> &nbsp;&nbsp;<a href="https://www.linkedin.com/in/kshitijdhyani/" target="_blank"><img height="32" width="32" src="https://cdnjs.cloudflare.com/ajax/libs/ionicons/4.5.6/collection/build/ionicons/svg/logo-linkedin.svg" /></a> &nbsp;&nbsp;<a href="https://www.instagram.com/kshitij_dhyani/?hl=en" target="_blank"><img height="32" width="32" src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/instagram.svg" /></a>
