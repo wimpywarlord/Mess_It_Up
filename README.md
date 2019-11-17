@@ -65,6 +65,25 @@ In the end you should end up with the xampp control panel which looks something 
 
 ## Deployment
 
+Start the xampp software , and click the start button for apache server and mysql database.
+Now click on admin of MySQL and create the following tables with the exact names and heading. If you fail to do this , the website wont work , the names need to match exaclty.
+
+The creation of tables and datbases are fairly simple and straight forward with a interactive UI , no coding is required hence i am going to leave it at your diposal. 
+
+Create a database called "user" with tables as :
+
+*insert values as per your own desire.
+*choose all data types as string
+
+"menu" with the attributes "dish_type" , "price" , "dish" , "mess_name"
+
+"mess" with attributes "mess_name" , "mess_capacity" , "mess_head" , "mess_contact"
+
+"student" with attributes "username" , "password" , "room_no" , "contact_no" , "balance" , "mess_name"
+
+"transaction" with attributes "transaction_id" , "time_of_t" , "dish" ,"price" , "username"
+
+
 Open your browser and type in the url 
 
 ```
