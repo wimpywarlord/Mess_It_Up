@@ -9,6 +9,7 @@ the system, which not only efficiently tallies the accounts of all the students 
 It is an all-around product which will massively improve the management of the food mall and fortify it as well. 
 It's fast, its safe, its useful, its mess it up by kshitij Dhyani
 
+![alt-text](https://github.com/wimpywarlord/Mess_It_Up/blob/master/mess/Screenshot_1.png)
 
 ## Getting Started
 
