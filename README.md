@@ -113,7 +113,7 @@ Help us make the site better in any way possible.
 
 ## I'm a social animal!
 
-So connect with me and share your experience.
+So connect with me on social media and share your experience.
 
 I would love to interact with this world full of amazing people such as you. 
 
