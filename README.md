@@ -51,11 +51,13 @@ All you need is a knack for learning.
 As the saying goes.
 
 > Your life will flash in front of your eyes one day,make sure its worth watching.
+
 A step by step series of examples that tell you how to get a development env running
 
 ### Installing
 
 All you need to dowload is xampp from [here](https://www.apachefriends.org/download.html)
+
 The installation process is fairly simple and the wizard will walk you through the process.
 
 Optionally I recommend you to download **Sublime text** 3.Its a amazing free editor from [here](https://www.sublimetext.com/3). 
@@ -67,7 +69,8 @@ In the end you should end up with the xampp control panel which looks something 
 ## Deployment
 
 Start the xampp software , and click the start button for apache server and mysql database.
-Now click on admin of MySQL and create the following tables with the exact names and heading. If you fail to do this , the website wont work , the names need to match exaclty.
+
+Now click on the admin of MySQL and create the following tables with the exact names and heading. If you fail to do this , the website wont work , the names need to match exaclty.
 
 The creation of tables and datbases are fairly simple and straight forward with a interactive UI , no coding is required hence i am going to leave it at your diposal. 
 
