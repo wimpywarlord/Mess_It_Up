@@ -4,8 +4,12 @@
 [![Think Big](https://img.shields.io/badge/Think-Big-orange.svg?style=for-the-badge)](https://www.linkedin.com/in/kshitijdhyani/)
 [![Work Hard](https://img.shields.io/badge/Work-Hard-blue.svg?style=for-the-badge)](https://github.com/wimpywarlord)
 
-The idea originated from the fact that the paid mess (food mall) in the L Block men hostel still use the primitive pen and paper method to maintain their records and monthly accounts of the customers. This is an open invitation to human error and malpractice, and hence we came to the rescue of our fellow Vitians. We build a full-proof Food Mall management 
-the system, which not only efficiently tallies the accounts of all the students but also has a user-friendly interface for users to check their current balance and contact details of the mess. In near future we tend to introduce the feature of dish review which will help our users to make the best choice when it comes to food. Also, another interesting feature that our web app offers is that we very transparently offer the ability to check and cross-check your transactions history at any moment in time. Also, this cut shorts the long and cumbersome process of standing in queues just waiting to order, everything is digital and lighting fast in the blink of an eye.
+The idea originated from the fact that the paid mess (food mall) in the L Block men hostel still use the primitive pen and paper method to maintain their records and monthly accounts of the customers. This is an open invitation to human error and malpractice, and hence we came to the rescue of our fellow Vitians.
+
+We build a full-proof Food Mall management 
+the system, which not only efficiently tallies the accounts of all the students but also has a user-friendly interface for users to check their current balance and contact details of the mess. In near future we tend to introduce the feature of dish review which will help our users to make the best choice when it comes to food. Also, another interesting feature that our web app offers is that we very transparently offer the ability to check and cross-check your transactions history at any moment in time. 
+
+Also, this cut shorts the long and cumbersome process of standing in queues just waiting to order, everything is digital and lighting fast in the blink of an eye.
 It is an all-around product which will massively improve the management of the food mall and fortify it as well. 
 It's fast, its safe, its useful, its mess it up by kshitij Dhyani
 
